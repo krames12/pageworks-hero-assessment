@@ -44,14 +44,21 @@ nav {
         text-decoration: none; }
     @media screen and (max-width: 600px) {
       nav ul {
+        top: 50px;
+        left: 0;
+        width: 100%;
         display: block;
+        position: absolute;
+        overflow: hidden;
+        text-align: center;
         max-height: 0px; }
         nav ul li {
           display: block;
           width: 100%; } }
 
 #nav-toggle {
-  display: none; }
+  display: none;
+  cursor: pointer; }
   @media screen and (max-width: 600px) {
     #nav-toggle {
       display: inline-block; } }

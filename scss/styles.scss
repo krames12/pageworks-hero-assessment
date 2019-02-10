@@ -73,6 +73,7 @@ nav {
   background-image: url("../images/hero-bg.png");
   background-size: cover;
   height: 80vh;
+  max-width: 100%;
   .content-container {
     height: 100%;
     justify-content: right;
@@ -92,6 +93,14 @@ nav {
       p {
         font-size: 1.4em;
         margin: 5px;
+      }
+    }
+    @media screen and (max-width: 750px) {
+      align-items: center;
+      justify-content: center;
+      .hero-text {
+        align-self: center;
+        text-align: center;
       }
     }
   }

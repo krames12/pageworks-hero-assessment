@@ -1,5 +1,4 @@
 nav {
-  position: relative;
   margin-right: 10px;
   ul {
     color: white;
@@ -18,17 +17,22 @@ nav {
       }
     }
     @media screen and (max-width: 600px) {
-      top: 50px;
-      left: 0;
+      top: 74px;
+      right: -75%;
       width: 100%;
       display: block;
       position: absolute;
       overflow: hidden;
       text-align: center;
-      max-height: 0px;
+      transition: all 0.3s ease-in-out;
       li {
         display: block;
         width: 100%;
+      }
+      &.active {
+        max-height: calc(50px * 3);
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
       }
     }
   }
@@ -38,6 +42,51 @@ nav {
   display: none;
   cursor: pointer;
   @media screen and (max-width: 600px) {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+  }
+  #menu-toggle-icon {
+    margin-left: 10px;
+    span {
+      user-select: none;
+      background: #eee;
+      display: block;
+      width: 30px;
+      height: 3px;
+      margin-top: 6px;
+      margin-bottom: 4px;
+      position: relative;
+      top: 0;
+      transition: all ease-in-out 0.2s;
+    }
+  }
+  &.open > #menu-toggle-icon {
+    span:nth-child(1) {
+      transform: rotate(-45deg);
+      top: 9px;
+    }
+    span:nth-child(2) {
+      width: 0;
+      opacity: 0;
+    }
+    span:nth-child(3) {
+      transform: rotate(45deg);
+      top: -9px;
+    }
+  }
+
+  #burger-menu.open span:nth-child(2) {
+    width: 0;
+    opacity: 0;
+  }
+
+  #burger-menu.open span:nth-child(3) {
+    transform: rotate(45deg);
+    top: -24px;
+  }
+
+  #burger-menu.open span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 24px;
   }
 }

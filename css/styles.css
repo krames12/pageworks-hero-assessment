@@ -70,20 +70,12 @@ nav {
         nav ul li {
           width: 100%;
           display: block;
-          padding: 1.5em 1em;
-          position: relative; }
-          nav ul li a::before {
-            content: "";
-            top: 0;
-            left: 100%;
-            right: 0;
-            height: 66px;
-            opacity: 0.2;
-            position: absolute;
-            transition: all 0.2s ease-in-out;
-            background-color: #00aef2; }
-          nav ul li:hover a::before {
-            left: 0; }
+          padding: 1.5em 1em; }
+          nav ul li a {
+            color: white;
+            transition: all 0.3s ease-in-out; }
+          nav ul li:hover a {
+            color: #00aef2; }
         nav ul.active {
           right: 0;
           background-color: rgba(0, 0, 0, 0.5); } }

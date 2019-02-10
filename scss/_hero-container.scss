@@ -5,13 +5,14 @@
   max-width: 100%;
   .content-container {
     height: 100%;
-    justify-content: right;
-    align-items: baseline;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    align-items: flex-end;
     .hero-text {
       margin-right: 10px;
       margin-bottom: 10%;
       color: white;
-      align-self: flex-end;
+      // align-self: flex-end;
       text-align: right;
       h1 {
         color: #00aef2;

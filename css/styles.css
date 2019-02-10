@@ -12,28 +12,58 @@ h1 {
   flex-wrap: nowrap; }
 
 header {
+  top: 0;
+  left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); }
+  color: white;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2); }
   header .content-container {
     align-items: center;
     justify-content: space-between; }
-    header .content-container #logo {
-      margin: 10px 5px; }
-    header .content-container ul {
-      color: white;
-      margin: 0;
+
+#logo {
+  margin: 10px 5px; }
+
+nav {
+  position: relative; }
+  nav ul {
+    color: white;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    padding-inline-start: 0; }
+    nav ul li {
       display: inline-block;
-      text-align: center;
-      list-style: none;
-      padding-inline-start: 0; }
-      header .content-container ul li {
-        display: inline-block;
-        padding: 1em; }
-        header .content-container ul li a,
-        header .content-container ul li a:visited {
-          color: white;
-          text-decoration: none; }
-    header .content-container #nav-toggle {
-      display: none; }
+      padding: 1em; }
+      nav ul li a,
+      nav ul li a:visited {
+        color: white;
+        text-decoration: none; }
+    @media screen and (max-width: 600px) {
+      nav ul {
+        display: block;
+        max-height: 0px; }
+        nav ul li {
+          display: block;
+          width: 100%; } }
+
+#nav-toggle {
+  display: none; }
+  @media screen and (max-width: 600px) {
+    #nav-toggle {
+      display: inline-block; } }
+
+.hero-container {
+  background: cover no-repeat url("images/hero-bg.png");
+  height: 80vh; }
+  .hero-container .content-container {
+    height: 100%;
+    justify-content: right;
+    align-items: baseline; }
+    .hero-container .content-container div {
+      align-self: flex-end;
+      text-align: right; }
 
 /*# sourceMappingURL=styles.css.map */

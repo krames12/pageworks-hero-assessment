@@ -121,8 +121,7 @@ nav {
   .hero-container .content-container {
     height: 100%;
     align-items: flex-end;
-    flex-direction: row-reverse;
-    -webkit-flex-direction: row-reverse; }
+    justify-content: flex-end; }
     .hero-container .content-container .hero-text {
       color: white;
       text-align: right;

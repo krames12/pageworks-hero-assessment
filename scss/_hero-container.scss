@@ -9,8 +9,7 @@
   .content-container {
     height: 100%;
     align-items: flex-end;
-    flex-direction: row-reverse;
-    -webkit-flex-direction: row-reverse;
+    justify-content: flex-end;
     .hero-text {
       color: white;
       text-align: right;

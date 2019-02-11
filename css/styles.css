@@ -120,34 +120,38 @@ nav {
     transform: rotate(-45deg); }
 
 .hero-container {
-  background-image: url("../images/hero-bg.png");
-  background-size: cover;
   height: 80vh;
-  max-width: 100%; }
+  max-width: 100%;
+  background-size: cover;
+  background-image: url("../images/hero-bg.png"); }
+  @media screen and (max-width: 650px) {
+    .hero-container {
+      height: 100vh; } }
   .hero-container .content-container {
     height: 100%;
-    -webkit-flex-direction: row-reverse;
+    align-items: flex-end;
     flex-direction: row-reverse;
-    align-items: flex-end; }
+    -webkit-flex-direction: row-reverse; }
     .hero-container .content-container .hero-text {
-      margin-right: 10px;
-      margin-bottom: 10%;
       color: white;
-      text-align: right; }
+      text-align: right;
+      margin-right: 10px;
+      margin-bottom: 10%; }
       .hero-container .content-container .hero-text h1 {
         color: #00aef2;
+        margin: 0;
         font-size: 3em;
-        font-weight: 700;
-        margin: 0; }
+        font-weight: 700; }
       .hero-container .content-container .hero-text p {
-        font-size: 1.4em;
-        margin: 5px; }
+        margin: 5px;
+        font-size: 1.4em; }
     @media screen and (max-width: 750px) {
       .hero-container .content-container {
         align-items: center;
         justify-content: center; }
         .hero-container .content-container .hero-text {
           align-self: center;
-          text-align: center; } }
+          text-align: center;
+          margin-bottom: none; } }
 
 /*# sourceMappingURL=styles.css.map */

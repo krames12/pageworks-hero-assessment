@@ -6,10 +6,10 @@ h1 {
   text-transform: uppercase; }
 
 .content-container {
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  max-width: 1200px; }
 
 header {
   top: 0;
@@ -109,15 +109,6 @@ nav {
   #nav-toggle.open > #menu-toggle-icon span:nth-child(3) {
     top: -9px;
     transform: rotate(45deg); }
-  #nav-toggle #burger-menu.open span:nth-child(2) {
-    width: 0;
-    opacity: 0; }
-  #nav-toggle #burger-menu.open span:nth-child(3) {
-    top: -24px;
-    transform: rotate(45deg); }
-  #nav-toggle #burger-menu.open span:nth-child(1) {
-    top: 24px;
-    transform: rotate(-45deg); }
 
 .hero-container {
   height: 80vh;

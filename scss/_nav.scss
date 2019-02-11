@@ -101,19 +101,4 @@ nav {
       transform: rotate(45deg);
     }
   }
-
-  #burger-menu.open span:nth-child(2) {
-    width: 0;
-    opacity: 0;
-  }
-
-  #burger-menu.open span:nth-child(3) {
-    top: -24px;
-    transform: rotate(45deg);
-  }
-
-  #burger-menu.open span:nth-child(1) {
-    top: 24px;
-    transform: rotate(-45deg);
-  }
 }

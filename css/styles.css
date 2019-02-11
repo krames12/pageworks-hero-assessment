@@ -70,7 +70,7 @@ nav {
         nav ul li {
           width: 100%;
           display: block;
-          padding: 1.5em 1em; }
+          padding: 1.5em 0; }
           nav ul li a {
             color: white;
             transition: all 0.3s ease-in-out; }
@@ -78,7 +78,7 @@ nav {
             color: #00aef2; }
         nav ul.active {
           right: 0;
-          background-color: rgba(0, 0, 0, 0.5); } }
+          background-color: rgba(0, 0, 0, 0.9); } }
 
 #nav-toggle {
   display: none;
